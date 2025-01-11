@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<!-- * meta  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- * link  -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>محسن فتاحی</title>
+</head>
+<body>
+<!-- * header and navbar  -->
+     <header id="header" class="header">
+        <nav id="nav" class="nav">
+            <div class="nav-toggle">
+                <button class="nav-toggle-button" id="toggleButton" onclick="openToggle()">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 13.3334H30M10 20H30M10 26.6667H30" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        
+                </button>
+            </div>
+            <div class="nav-toggle-container" id="toggle-container">
+                <button id="toggle-close" onclick="closeToggle()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.1665 12.008L20.762 4.43822C21.0793 4.11791 21.0793 3.599 20.762 3.27868C20.4503 2.95264 19.9355 2.94285 19.6118 3.2568L12.0163 10.8266L4.51839 3.2568C4.36467 3.09288 4.15078 3 3.92702 3C3.70327 3 3.48938 3.09288 3.33566 3.2568C3.0543 3.56628 3.0543 4.04123 3.33566 4.35071L10.8335 11.9096L3.238 19.4685C2.92067 19.7888 2.92067 20.3077 3.238 20.628C3.38907 20.784 3.59685 20.871 3.81309 20.8687C4.03351 20.8867 4.25202 20.8159 4.42074 20.6718L12.0163 13.102L19.6118 20.7593C19.7629 20.9153 19.9707 21.0022 20.1869 21C20.4029 21.001 20.6102 20.9142 20.762 20.7593C21.0793 20.439 21.0793 19.9201 20.762 19.5998L13.1665 12.008Z" fill="black"/>
+                        </svg>                        
+                </button>
+                <div class="toggle-container-content">
+                    <div class="container-content-head">
+                        <ul class="content-list">
+                            <li class="content-item"><a href="#" class="content-link">صفحه اصلی</a></li>
+                            <li class="content-item"><a href="#" class="content-link">اطلاعیه ها</a></li>
+                            <li class="content-item"><a href="#" class="content-link">افتخارات</a></li>
+                            <li class="content-item">
+                                <a href="#" class="content-link">خدمات</a>
+
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.9999 21.5001C15.6025 21.4987 15.2216 21.3406 14.9399 21.0601L6.93993 13.0601C6.65656 12.7802 6.49707 12.3984 6.49707 12.0001C6.49707 11.6018 6.65656 11.22 6.93993 10.9401L14.9399 2.9401C15.3139 2.5388 15.877 2.37361 16.4085 2.50933C16.94 2.64506 17.355 3.06006 17.4907 3.59153C17.6264 4.12299 17.4612 4.68616 17.0599 5.0601L10.1199 12.0001L17.0599 18.9401C17.3433 19.22 17.5028 19.6018 17.5028 20.0001C17.5028 20.3984 17.3433 20.7802 17.0599 21.0601C16.7783 21.3406 16.3974 21.4987 15.9999 21.5001Z" fill="black"/>
+                                    </svg>                                    
+                            </li>
+                            <li class="content-item"><a href="#" class="content-link">وبلاگ</a></li>
+                            <li class="content-item"><a href="#" class="content-link">درباره ما</a></li>
+                            <li class="content-item"><a href="#" class="content-link">تماس با ما</a></li>
+                        </ul>
+                    </div>
+                    <div class="container-content-footer">
+                        <span>هنرستان سما در </span>
+                        <a href="#" class="social-link">کانال ایتا</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-logo">
+                <a href="index.html" class="logo">لوگو</a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">صفحه اصلی</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">اطلاعیه ها</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">افتخارات</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">خدمات</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">وبلاگ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">درباره ما</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="nav-button-contact"><a href="tel:09017644098"><span>9017640098</span><span>منتظر صدای گرم شماییم</span></a></button>
+                <button class="nav-button-register">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 20H1C0.59 20 0.25 19.66 0.25 19.25C0.25 18.84 0.59 18.5 1 18.5H19C19.41 18.5 19.75 18.84 19.75 19.25C19.75 19.66 19.41 20 19 20Z" fill="#4A4A4A"/>
+                        <path d="M17.0193 1.48406C15.0793 -0.455937 13.1793 -0.505937 11.1893 1.48406L9.97934 2.69406C9.87934 2.79406 9.83934 2.95406 9.87934 3.09406C10.6393 5.74406 12.7593 7.86406 15.4093 8.62406C15.4493 8.63406 15.4893 8.64406 15.5293 8.64406C15.6393 8.64406 15.7393 8.60406 15.8193 8.52406L17.0193 7.31406C18.0093 6.33406 18.4893 5.38406 18.4893 4.42406C18.4993 3.43406 18.0193 2.47406 17.0193 1.48406Z" fill="#4A4A4A"/>
+                        <path d="M13.6102 9.53371C13.3202 9.39371 13.0402 9.25371 12.7702 9.09371C12.5502 8.96371 12.3402 8.82371 12.1302 8.67371C11.9602 8.56371 11.7602 8.40371 11.5702 8.24371C11.5502 8.23371 11.4802 8.17371 11.4002 8.09371C11.0702 7.81371 10.7002 7.45371 10.3702 7.05371C10.3402 7.03371 10.2902 6.96371 10.2202 6.87371C10.1202 6.75371 9.95017 6.55366 9.80017 6.32366C9.68017 6.17366 9.54017 5.95366 9.41017 5.73366C9.25017 5.46376 9.11017 5.19366 8.97017 4.91376C8.94898 4.86836 8.92849 4.82316 8.90861 4.77826C8.76103 4.44496 8.3264 4.34746 8.06864 4.60526L2.34017 10.3337C2.21017 10.4637 2.09017 10.7137 2.06017 10.8837L1.52017 14.7137C1.42017 15.3937 1.61017 16.0337 2.03017 16.4637C2.39017 16.8137 2.89017 17.0037 3.43017 17.0037C3.55017 17.0037 3.67017 16.9937 3.79017 16.9737L7.63017 16.4337C7.81017 16.4037 8.06017 16.2837 8.18017 16.1537L13.9015 10.4324C14.161 10.1728 14.0631 9.72738 13.7255 9.58332C13.6875 9.56711 13.6491 9.55058 13.6102 9.53371Z" fill="#4A4A4A"/>
+                        </svg>                        
+                    <span>پیش ثبت نام</span>
+                </button>
+            </div>
+        </nav>
+     </header>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
